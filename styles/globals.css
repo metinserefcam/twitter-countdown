@@ -4,6 +4,16 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #2d608c;
+    background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+    font-size: 1.5rem;
+    color: white
+
+}
+@media screen and (max-width: 740px) {
+  body {
+    font-size: 0.52rem;
+  }
 }
 
 a {
@@ -14,3 +24,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.timer-wrapper {
+  text-align: center;
+  padding: 150px;
+}
+
+@media screen and (max-width: 740px) {
+  .timer-wrapper {
+    padding-top: 60px;
+  }
+}
+
