@@ -43,14 +43,7 @@ export default function Home() {
       </Head>
 
       <div className="timer-wrapper">
-        <div className="image-container">
-          <Image
-            src="/twitter.png"
-            height={150}
-            width={150}
-            className="image"
-          />
-        </div>
+        <Image src="/twitter.png" height={150} width={150} className="image" />
         <h1>Days: {days}</h1>
         <h2>Hours: {hours}</h2>
         <h3>Minutes: {minutes}</h3>
