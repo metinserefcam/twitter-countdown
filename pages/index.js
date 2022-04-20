@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   const [days, setDays] = useState(0);
@@ -43,7 +44,14 @@ export default function Home() {
       </Head>
 
       <div className="timer-wrapper">
-        <Image src="/twitter.png" height={150} width={150} className="image" />
+        <Link href="https://twitter.com/skylerisabitch">
+          <Image
+            src="/twitter.png"
+            height={150}
+            width={150}
+            className="image"
+          />
+        </Link>
         <h1>Days: {days}</h1>
         <h2>Hours: {hours}</h2>
         <h3>Minutes: {minutes}</h3>
